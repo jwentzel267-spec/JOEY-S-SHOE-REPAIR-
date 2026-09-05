@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JOEY'S SHOE REPAIR</title>
+  <meta name="description" content="JOEY'S SHOE REPAIR — quality shoe repairs, resoling, polishing and more. Prices listed in ZAR (South African Rand).">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>JOEY'S SHOE REPAIR</h1>
+      <p class="tagline">Reliable repairs • Fast turnaround • Fair prices (All prices in ZAR)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>We bring your shoes back to life</h2>
+      <p>From quick heel taps to full resoles — local, trustworthy shoe repair in your neighbourhood.</p>
+      <a class="cta" href="#contact">Contact Us</a>
+    </section>
+
+    <section id="services">
+      <h3>Services & Prices</h3>
+      <ul class="services-list">
+        <li>
+          <strong>Heel replacement</strong>
+          <span class="price" data-price="150">R150.00</span>
+          <p class="desc">Replace worn heels — includes labour and basic materials.</p>
+        </li>
+        <li>
+          <strong>Shoe resoling</strong>
+          <span class="price" data-price="450">R450.00</span>
+          <p class="desc">Full sole replacement for durable wear.</p>
+        </li>
+        <li>
+          <strong>Stitch repair</strong>
+          <span class="price" data-price="120">R120.00</span>
+          <p class="desc">Repair seams and stitching on leather or fabric.</p>
+        </li>
+        <li>
+          <strong>Polish & Clean</strong>
+          <span class="price" data-price="60">R60.00</span>
+          <p class="desc">Quick clean and polish to restore shine.</p>
+        </li>
+      </ul>
+      <p class="note">All prices are indicative and charged in South African Rand (ZAR). Final price may vary depending on materials and condition.</p>
+    </section>
+
+    <section id="about">
+      <h3>About Joey</h3>
+      <p>Joey has been repairing shoes for over 15 years, specialising in leather repairs, resoling and custom fitting. Friendly service and quality workmanship.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact & Location</h3>
+      <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+      <p>Email: <a href="mailto:joey@example.com">joey@example.com</a></p>
+      <p>Address: 123 High Street, YourTown, South Africa</p>
+      <p>Opening hours: Mon–Fri 08:00–17:00, Sat 08:00–13:00</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> JOEY'S SHOE REPAIR — Prices in ZAR (R)</p>
+    </div>
+  </footer>
+
+  <script>
+    // Display current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Format all elements with class "price" using ZAR currency formatting
+    (function(){
+      const formatter = new Intl.NumberFormat('en-ZA', { style: 'currency', currency: 'ZAR' });
+      document.querySelectorAll('.price').forEach(el => {
+        const raw = Number(el.getAttribute('data-price')) || 0;
+        el.textContent = formatter.format(raw);
+      });
+    })();
+  </script>
+</body>
+</html>
