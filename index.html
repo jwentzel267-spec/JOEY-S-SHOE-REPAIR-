@@ -3,85 +3,169 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>JOEY'S SHOE REPAIR</title>
+  <title>JOEY'S SHOE REPAIR — Quality Shoe Repairs (ZAR)</title>
   <meta name="description" content="JOEY'S SHOE REPAIR — quality shoe repairs, resoling, polishing and more. Prices listed in ZAR (South African Rand).">
+  <meta name="keywords" content="shoe repair, resoling, heel replacement, shoe polish, ZAR, South Africa">
+  <meta name="author" content="Joey's Shoe Repair">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="JOEY'S SHOE REPAIR">
+  <meta property="og:description" content="Reliable shoe repairs, resoling and polishing. Prices in ZAR (R).">
+  <meta property="og:type" content="business.business">
+  <meta property="og:locale" content="en_ZA">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JOEY'S SHOE REPAIR">
+  <meta name="twitter:description" content="Reliable shoe repairs, resoling and polishing. Prices in ZAR (R).">
+
   <link rel="stylesheet" href="/styles.css">
+
+  <!-- Structured data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Joey's Shoe Repair",
+    "image": "https://jwentzel267-spec.github.io/JOEY-S-SHOE-REPAIR-/images/logo.svg",
+    "@id": "",
+    "url": "https://jwentzel267-spec.github.io/JOEY-S-SHOE-REPAIR-/",
+    "telephone": "+27123456789",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 High Street",
+      "addressLocality": "YourTown",
+      "addressRegion": "",
+      "postalCode": "",
+      "addressCountry": "ZA"
+    },
+    "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
+    "priceRange": "R"
+  }
+  </script>
+
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>JOEY'S SHOE REPAIR</h1>
-      <p class="tagline">Reliable repairs • Fast turnaround • Fair prices (All prices in ZAR)</p>
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <a href="/" class="logo-link" aria-label="Joey's Shoe Repair home">
+        <img src="/images/logo.svg" alt="Joey's Shoe Repair logo" class="logo" width="140" height="60">
+      </a>
+      <div>
+        <h1>JOEY'S SHOE REPAIR</h1>
+        <p class="tagline">Reliable repairs • Fast turnaround • Fair prices (All prices in ZAR)</p>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>We bring your shoes back to life</h2>
+  <main class="container" id="main" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">We bring your shoes back to life</h2>
       <p>From quick heel taps to full resoles — local, trustworthy shoe repair in your neighbourhood.</p>
       <a class="cta" href="#contact">Contact Us</a>
     </section>
 
-    <section id="services">
-      <h3>Services & Prices</h3>
-      <ul class="services-list">
+    <section id="services" aria-labelledby="services-title">
+      <h3 id="services-title">Services & Prices</h3>
+      <ul class="services-list" id="services-list">
         <li>
-          <strong>Heel replacement</strong>
-          <span class="price" data-price="150">R150.00</span>
-          <p class="desc">Replace worn heels — includes labour and basic materials.</p>
+          <div>
+            <strong>Heel replacement</strong>
+            <p class="desc">Replace worn heels — includes labour and basic materials.</p>
+          </div>
+          <div>
+            <span class="price" data-price="150" aria-hidden="true">R150.00</span>
+            <span class="sr-only">One hundred and fifty rand</span>
+          </div>
         </li>
         <li>
-          <strong>Shoe resoling</strong>
-          <span class="price" data-price="450">R450.00</span>
-          <p class="desc">Full sole replacement for durable wear.</p>
+          <div>
+            <strong>Shoe resoling</strong>
+            <p class="desc">Full sole replacement for durable wear.</p>
+          </div>
+          <div>
+            <span class="price" data-price="450" aria-hidden="true">R450.00</span>
+            <span class="sr-only">Four hundred and fifty rand</span>
+          </div>
         </li>
         <li>
-          <strong>Stitch repair</strong>
-          <span class="price" data-price="120">R120.00</span>
-          <p class="desc">Repair seams and stitching on leather or fabric.</p>
+          <div>
+            <strong>Stitch repair</strong>
+            <p class="desc">Repair seams and stitching on leather or fabric.</p>
+          </div>
+          <div>
+            <span class="price" data-price="120" aria-hidden="true">R120.00</span>
+            <span class="sr-only">One hundred and twenty rand</span>
+          </div>
         </li>
         <li>
-          <strong>Polish & Clean</strong>
-          <span class="price" data-price="60">R60.00</span>
-          <p class="desc">Quick clean and polish to restore shine.</p>
+          <div>
+            <strong>Polish & Clean</strong>
+            <p class="desc">Quick clean and polish to restore shine.</p>
+          </div>
+          <div>
+            <span class="price" data-price="60" aria-hidden="true">R60.00</span>
+            <span class="sr-only">Sixty rand</span>
+          </div>
         </li>
       </ul>
       <p class="note">All prices are indicative and charged in South African Rand (ZAR). Final price may vary depending on materials and condition.</p>
+
+      <div class="calculator" aria-labelledby="calculator-title">
+        <h4 id="calculator-title">Build your job and estimate price</h4>
+        <form id="price-form">
+          <label><input type="checkbox" name="service" value="150" data-desc="Heel replacement"> Heel replacement — <span class="calc-price">R150.00</span></label><br>
+          <label><input type="checkbox" name="service" value="450" data-desc="Shoe resoling"> Shoe resoling — <span class="calc-price">R450.00</span></label><br>
+          <label><input type="checkbox" name="service" value="120" data-desc="Stitch repair"> Stitch repair — <span class="calc-price">R120.00</span></label><br>
+          <label><input type="checkbox" name="service" value="60" data-desc="Polish & Clean"> Polish & Clean — <span class="calc-price">R60.00</span></label>
+          <div class="calc-total">Total: <strong id="calc-total">R0.00</strong></div>
+        </form>
+      </div>
+
     </section>
 
-    <section id="about">
-      <h3>About Joey</h3>
-      <p>Joey has been repairing shoes for over 15 years, specialising in leather repairs, resoling and custom fitting. Friendly service and quality workmanship.</p>
+    <section id="about" aria-labelledby="about-title">
+      <h3 id="about-title">About Joey</h3>
+      <div class="about-grid">
+        <img src="/images/shoe.svg" alt="Illustration of shoes" class="feature-img">
+        <p>Joey has been repairing shoes for over 15 years, specialising in leather repairs, resoling and custom fitting. Friendly service and quality workmanship.</p>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h3>Contact & Location</h3>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h3 id="contact-title">Contact & Location</h3>
       <p>Phone: <a href="tel:+27123456789">+27 12 345 6789</a></p>
       <p>Email: <a href="mailto:joey@example.com">joey@example.com</a></p>
       <p>Address: 123 High Street, YourTown, South Africa</p>
       <p>Opening hours: Mon–Fri 08:00–17:00, Sat 08:00–13:00</p>
+
+      <h4>Send us a message</h4>
+      <!-- Formspree: replace the action URL with your own Formspree endpoint -->
+      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="_replyto" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send message</button>
+        <div id="form-status" role="status" aria-live="polite"></div>
+      </form>
+
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <p>© <span id="year"></span> JOEY'S SHOE REPAIR — Prices in ZAR (R)</p>
+      <p><small>Site maintained by Joey. For custom domain and HTTPS instructions, see the README.</small></p>
     </div>
   </footer>
 
-  <script>
-    // Display current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Format all elements with class "price" using ZAR currency formatting
-    (function(){
-      const formatter = new Intl.NumberFormat('en-ZA', { style: 'currency', currency: 'ZAR' });
-      document.querySelectorAll('.price').forEach(el => {
-        const raw = Number(el.getAttribute('data-price')) || 0;
-        el.textContent = formatter.format(raw);
-      });
-    })();
-  </script>
+  <script src="/app.js" defer></script>
 </body>
 </html>

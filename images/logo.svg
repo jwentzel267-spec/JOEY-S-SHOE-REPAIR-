@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Joey's Shoe Repair logo</title>
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="10" y="50" font-family="Verdana,Segoe UI,Roboto,Arial" font-size="28" fill="#b33">JOEY'S</text>
+  <text x="140" y="50" font-family="Verdana,Segoe UI,Roboto,Arial" font-size="18" fill="#333">Shoe Repair</text>
+</svg>

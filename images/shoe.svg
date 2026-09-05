@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-labelledby="shoeTitle">
+  <title id="shoeTitle">Illustration of shoes</title>
+  <g fill="#333">
+    <path d="M10 80 C30 40 80 40 120 60 L150 70 L140 90 C120 100 40 110 10 80 Z" opacity="0.9"/>
+    <circle cx="60" cy="60" r="3" fill="#b33"/>
+  </g>
+</svg>
